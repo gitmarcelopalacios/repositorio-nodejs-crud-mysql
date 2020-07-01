@@ -5,7 +5,12 @@ const express = require('express');
 // puedo ir agregandole rutas.
 const router = express.Router();
 
+// requiero en controlador
+const customerController = require('../controllers/customerController');
 
+// Aquí escribimos todas las URLS que nuestra
+// aplicación puede manejar.
+router.get('/', customerController.list);
 
 
 // al final lo exporto
