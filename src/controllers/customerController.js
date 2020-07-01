@@ -8,10 +8,8 @@ controller.list = (req, res) => {
                 //res.next(err);
                 res.json(err);
             }
-            console.log(customers);
-            res.render('customers', {
-                data: customers
-            })
+            //console.log(customers);
+            res.render('customers', { data: customers })
         });
     });
 };
